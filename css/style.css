@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+/* 全般設定 */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+figure,
+form {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.sp_image {
+    display: none;
+}
+
+/* ヘッダー */
+header {
+    height: 60px;
+    background-color: #009785;
+}
+
+/* メイン */
+main {
+    text-align: center;
+    color: #009785;
+}
+
+.section_wrapper {
+    max-width: 1080px;
+    margin: 60px auto 0;
+}
+
+.section_inner {
+    margin: 0 16px;
+}
+
+.main_visual {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+
+.font_black {
+    color: #000;
+    font-size: 20px;
+}
+
+.supplement {
+    margin-top: 48px;
+    font-weight: 500;
+}
+
+.yellow_line {
+    position: relative;
+}
+
+.yellow_line::before {
+    width: 90%;
+    content: '';
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70%;
+    z-index: -1;
+}
+
+.content_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 64px;
+}
+
+.procedure_wrapper {
+    background-color: #009785;
+    color: #fff;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.procedure_buttun {
+    font-size: 30px;
+    width: 800px;
+    margin: 16px auto;
+    height: 80px;
+    background-color: #ff6700;
+    border-radius: 38px;
+    border: #f8623d solid 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.procedure_buttun::after {
+    content: "≫";
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 44%;
+    transform: translateY(-50%);
+}
+
+.procedure_buttun:hover::after {
+    content: "≫";
+    font-size: 60px;
+    position: absolute;
+    right: 15px;
+    top: 44%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.example_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example_text img {
+    margin-top: 64px;
+    padding-right: 16px;
+}
+
+.example_cases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.example_case {
+    margin-top: 48px;
+}
+
+.cautionary_note {
+    margin: 16px 0 48px;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+/* もっと詳しく */
+.see_more_wrapper {
+    border: #009785 solid 1px;
+    border-radius: 5px;
+    height: 120px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.see_more_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.see_more_text {
+    font-size: 30px;
+    font-weight: 700;
+    width: 150%;
+}
+
+.women_image {
+    float: left;
+    clear: both;
+    position: absolute;
+    top: 16px;
+    left: 8%;
+}
+
+.see_more_text_supplement {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.see_more_content::after {
+    content: "≫";
+    font-size: 60px;
+    position: absolute;
+    right: -230px;
+    top: 44%;
+    transform: translate(50%, -50%);
+}
+
+.see_more_content:hover::after {
+    content: "≫";
+    font-size: 65px;
+    position: absolute;
+    right: -240px;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.application_wrapper {
+    margin: 60px auto 48px;
+}
+
+.application_content_logo {
+    width: 374px;
+    padding-right: 16px;
+}
+
+.application_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.application_step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.application_step img {
+    margin-top: 32px;
+}
+
+.border_top {
+    width: 100%;
+    margin-top: 48px;
+	border-top: 10px ;
+	border-style: dotted;
+	border-color: #009785;
+}
+
+/* 注意事項 */
+.cautionary_wrapper {
+    background-color:#CEECE8;
+    margin-top: 64px;
+    padding: 32px;
+}
+
+.cautionary_inner {
+    background-color: #fff;
+    color: #000;
+    max-width: 1080px;
+    margin: 32px auto;
+    padding: 64px;
+}
+
+.cautionary_title {
+    margin-bottom: 48px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #009785;
+}
+
+
+.cautionary_container ul {
+    font-size: 16px;
+    text-align: left;
+    line-height: 26px;
+}
+
+.link_ul {
+    margin-top: 16px;
+}
+
+.link_ul a {
+    text-decoration: underline;
+    display: inline-block;
+}
+
+/* フッター */
+footer {
+    height: 154px;
+    background-color: #009785;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+    .pc_image {
+        display: none;   
+    }
+
+    .sp_image {
+        display: block;
+    }
+
+    .procedure_buttun {
+        font-size: 30px;
+        width: 90%;
+        margin: 16px auto;
+        height: 80px;
+        background-color: #ff6700;
+        border-radius: 38px;
+        border: #f8623d solid 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .procedure_buttun::after {
+        content: "≫";
+        font-size: 40px;
+        position: absolute;
+        right: 20px;
+        top: 44%;
+        transform: translateY(-50%);
+    }
+
+    .women_image {
+        left: 0;
+    }
+    
+
+    .cautionary_inner {
+        padding: 16px;
+    }
+    .cautionary_title {
+        margin: 8px 0 16px;
+    }
+
+}
