@@ -127,7 +127,7 @@ h3 {
     align-items: center;
 }
 
-.procedure_buttun {
+.procedure_button {
     font-size: 30px;
     width: 800px;
     margin: 16px auto;
@@ -141,7 +141,7 @@ h3 {
     position: relative;
 }
 
-.procedure_buttun::after {
+.procedure_button::after {
     content: "≫";
     font-size: 40px;
     position: absolute;
@@ -279,14 +279,14 @@ h3 {
 .border_top {
     width: 100%;
     margin-top: 48px;
-	border-top: 10px ;
-	border-style: dotted;
-	border-color: #009785;
+    border-top: 10px;
+    border-style: dotted;
+    border-color: #009785;
 }
 
 /* 注意事項 */
 .cautionary_wrapper {
-    background-color:#CEECE8;
+    background-color: #CEECE8;
     margin-top: 64px;
     padding: 32px;
 }
@@ -330,16 +330,62 @@ footer {
 
 /* レスポンシブ */
 @media (max-width: 768px) {
+
+    .section_wrapper {
+        margin-top: 48px;
+    }
+
     .pc_image {
-        display: none;   
+        display: none;
     }
 
     .sp_image {
         display: block;
     }
 
-    .procedure_buttun {
+    .sp_30px {
         font-size: 30px;
+    }
+
+    .sp_35px {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .sp_25px {
+        font-size: 25px;
+    }
+
+    .sp_18px {
+        font-size: 18px;
+    }
+
+    .font_black,
+    .see_more_text,
+    .see_more_text_supplement {
+        font-size: 16px;
+    }
+
+    .supplement {
+        margin-top: 30px;
+    }
+
+    .cautionary_note {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .content_title,
+    .example_text img,
+    .example_case {
+        margin-top: 32px;
+    }
+
+    .procedure_button {
+        font-size: 22px;
         width: 90%;
         margin: 16px auto;
         height: 80px;
@@ -351,24 +397,31 @@ footer {
         align-items: center;
         position: relative;
     }
-    
-    .procedure_buttun::after {
+
+    .procedure_button::after {
         content: "≫";
-        font-size: 40px;
+        font-size: 30px;
         position: absolute;
         right: 20px;
         top: 44%;
         transform: translateY(-50%);
     }
 
+    .see_more_wrapper {
+        height: 90px;
+    }
+
     .women_image {
         left: 0;
+        top: 0;
+        height: 100%;
     }
-    
+
 
     .cautionary_inner {
         padding: 16px;
     }
+
     .cautionary_title {
         margin: 8px 0 16px;
     }
