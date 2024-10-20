@@ -49,6 +49,10 @@ img {
     display: none;
 }
 
+.smartbanner img {
+    width: 10%;;
+}
+
 /* ヘッダー */
 header {
     height: 60px;
@@ -118,6 +122,8 @@ h3 {
     margin-top: 64px;
 }
 
+
+/* Netアンサーで手続きをする */
 .procedure_wrapper {
     background-color: #009785;
     color: #fff;
@@ -141,24 +147,26 @@ h3 {
     position: relative;
 }
 
+.procedure_button:hover {
+    transform: translateY(3px);
+    transition: all 0.5s;
+}
+
+
 .procedure_button::after {
     content: "≫";
     font-size: 40px;
     position: absolute;
-    right: 20px;
-    top: 44%;
-    transform: translateY(-50%);
+    right: 3%;
+    top: 10%;
+    transform: translate(-50%);
+    animation: procedure_button 1.5s infinite;
+}
+@keyframes procedure_button {
+    form {transform: translateX(2px);}
+    to {transform: translateX(0);}
 }
 
-.procedure_buttun:hover::after {
-    content: "≫";
-    font-size: 60px;
-    position: absolute;
-    right: 15px;
-    top: 44%;
-    transform: translateY(-50%);
-    transition: .5s;
-}
 
 .example_text {
     display: flex;
@@ -193,11 +201,17 @@ h3 {
 
 /* もっと詳しく */
 .see_more_wrapper {
+    height: 120px;
+    max-width: 1080px;
+    margin: 60px auto 0;
+}
+
+.see_more_inner {
     border: #009785 solid 1px;
     border-radius: 5px;
-    height: 120px;
-    margin: 60px auto 0;
     position: relative;
+    margin: 0 16px;
+    height: 100%;
 }
 
 .see_more_content {
@@ -216,6 +230,7 @@ h3 {
     font-size: 30px;
     font-weight: 700;
     width: 150%;
+    position: relative;
 }
 
 .women_image {
@@ -223,7 +238,7 @@ h3 {
     clear: both;
     position: absolute;
     top: 16px;
-    left: 8%;
+    left: 4%;
 }
 
 .see_more_text_supplement {
@@ -235,12 +250,12 @@ h3 {
     content: "≫";
     font-size: 60px;
     position: absolute;
-    right: -230px;
+    right: -38%;
     top: 44%;
     transform: translate(50%, -50%);
 }
 
-.see_more_content:hover::after {
+/* .see_more_content:hover::after {
     content: "≫";
     font-size: 65px;
     position: absolute;
@@ -248,7 +263,7 @@ h3 {
     top: 44%;
     transform: translate(-50%, -50%);
     transition: .5s;
-}
+} */
 
 .application_wrapper {
     margin: 60px auto 48px;
@@ -263,6 +278,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding-top: 64px;
 }
 
 .application_step {
@@ -274,6 +290,12 @@ h3 {
 
 .application_step img {
     margin-top: 32px;
+}
+
+.application_content_text {
+    font-size: 30px;
+    font-weight: 700;
+    overflow-wrap: break-word;
 }
 
 .border_top {
@@ -329,6 +351,12 @@ footer {
 }
 
 /* レスポンシブ */
+@media (max-width: 1081px) {
+    .women_image {
+        left: 2%;
+    }
+}
+
 @media (max-width: 768px) {
 
     .section_wrapper {
@@ -369,6 +397,14 @@ footer {
         font-size: 16px;
     }
 
+    .see_more_text {
+        width: 135%;
+    }
+
+    .see_more_content::after {
+        font-size: 50px;
+    }
+
     .supplement {
         margin-top: 30px;
     }
@@ -384,27 +420,25 @@ footer {
         margin-top: 32px;
     }
 
+    .procedure_wrapper {
+        height: 80px;
+    }
+
     .procedure_button {
         font-size: 22px;
         width: 90%;
-        margin: 16px auto;
-        height: 80px;
-        background-color: #ff6700;
+        height: 60px;
         border-radius: 38px;
-        border: #f8623d solid 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
     }
 
     .procedure_button::after {
-        content: "≫";
         font-size: 30px;
-        position: absolute;
-        right: 20px;
-        top: 44%;
-        transform: translateY(-50%);
+        right: 1%;
+        top: 10%;
+    }
+
+    .procedure_button_text {
+        padding-right: 15px;
     }
 
     .see_more_wrapper {
@@ -412,9 +446,13 @@ footer {
     }
 
     .women_image {
-        left: 0;
-        top: 0;
-        height: 100%;
+        left: 1%;
+        top: 16%;
+        height: 80%;
+    }
+
+    .application_content {
+        padding-top: 32px;
     }
 
 

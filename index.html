@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ショッピングあとから分割</title>
+    <link rel="icon" href="img/saison_portal_icon.png">
+
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Safari SmartBanner -->
-    <meta name="apple-itunes-app" content="app-id=[896132217]">
-    <!-- Android SmartBanner -->
-    <meta name="smartbanner:title" content=[アプリ名]>
-    <meta name="smartbanner:author" content=[会社名]>
-    <meta name="smartbanner:price" content=[アプリの値段]>
-    <meta name="smartbanner:price-suffix-google" content=" - Google Play"> <!-- Android用suffix -->
-    <meta name="smartbanner:icon-google" content=[アイコン画像のパス]>
-    <meta name="smartbanner:button" content="開く"> <!-- ボタンの表示名 -->
-    <meta name="smartbanner:button-url-google" content=[Google PlayのアプリURL]>
-    <meta name="smartbanner:enabled-platforms" content="android"> <!-- スマートバナーを利用するOSの指定 -->
+    <!-- Start SmartBanner configuration -->
+    <meta name="smartbanner:title" content="セゾンPortal/クレジット管理">
+    <meta name="smartbanner:author" content="Credit Saison Co.,ltd.">
+    <meta name="smartbanner:price" content="0円">
+    <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
+    <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
+    <meta name="smartbanner:icon-apple" content="img/saison_portal_icon.png">
+    <meta name="smartbanner:icon-google" content="img/saison_portal_icon.png">
+    <meta name="smartbanner:button" content="VIEW">
+    <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/jp/app/%E3%82%BB%E3%82%BE%E3%83%B3portal-%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E7%AE%A1%E7%90%86/id896132217">
+    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=jp.co.saisoncard.android.saisonportal&pli=1">
+    <meta name="smartbanner:enabled-platforms" content="android,ios">
     <meta name="smartbanner:close-label" content="Close">
+    <!-- End SmartBanner configuration -->
 
     <link rel="stylesheet" href="css/smartbanner.min.css">
     <script src="js/smartbanner.min.js"></script>
@@ -34,10 +38,13 @@
     </header>
 
     <main>
+        <!--スマートバナー-->
         <section class="top">
             <div class="smartbanner">
             </div>
         </section>
+
+        <!--メインビジュアル-->
         <section class="main_visual">
             <h3>＼　新サービスのお知らせ　／<br>
                 <span class="yellow_line">「あとから分割」</span>がリリースいたしました
@@ -46,14 +53,14 @@
             <img class="sp_image" src="img/mv_sp.jpg" alt="メインビジュアル">
         </section>
 
+        <!--Netアンサー①上部-->
         <div class="procedure_wrapper">
             <div class="procedure_button">
                 <a href="https://www.a-q-f.com/openpc/directLogin.do?yyy=7&login_div=1">
-                    <p>Netアンサーで手続きをする</p>
+                    <p class="procedure_button_text">Netアンサーで手続きをする</p>
                 </a>
             </div>
         </div>
-
 
         <section class="explanation_wrapper section_wrapper">
             <div class="section_inner">
@@ -78,23 +85,28 @@
             </div>
         </section>
 
+        <!--Netアンサー②中部-->
         <div class="procedure_wrapper">
             <div class="procedure_button">
-                <a href="https://www.a-q-f.com/openpc/directLogin.do?yyy=7&login_div=1" target="_blank">
-                    <p>Netアンサーで手続きをする</p>
+                <a href="https://www.a-q-f.com/openpc/directLogin.do?yyy=7&login_div=1">
+                    <p class="procedure_button_text">Netアンサーで手続きをする</p>
                 </a>
             </div>
         </div>
 
+        <!--もっと詳しく見たい方①上部-->
         <div class="see_more_wrapper">
-            <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
-                <img class="women_image" src="img/2601491 1.jpg" alt="案内する女性のイラスト">
-                <div class="see_more_content">
-                    <p class="see_more_text">「あとから分割」をもっと詳しく見たい方はこちら<br>
-                        <span class="see_more_text_supplement">（公式サイトへ遷移します）</span>
-                    </p>
-                </div>
-            </a>
+            <div class="see_more_inner">
+                <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
+                    <img class="women_image pc_image" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
+                    <img class="women_image sp_image" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
+                    <div class="see_more_content">
+                        <p class="see_more_text">「あとから分割」をもっと詳しく見たい方はこちら<br>
+                            <span class="see_more_text_supplement">（公式サイトへ遷移します）</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <section class="application_wrapper section_wrapper">
@@ -103,7 +115,7 @@
                 <p class="content_title sp_25px">＼ アプリで便利に ／</p>
                 <div class="application_content">
                     <img class="application_content_logo" src="img/ロゴ.png">
-                    <p class="content_title sp_18px">からもお手続きいただけます</p>
+                    <p class="application_content_text sp_18px">からもお手続きいただけます</p>
                 </div>
 
                 <div class="application_step">
@@ -117,28 +129,31 @@
             </div>
         </section>
 
+        <!--Netアンサー③下部-->
         <div class="procedure_wrapper">
             <div class="procedure_button">
-                <a href="https://www.a-q-f.com/openpc/directLogin.do?yyy=7&login_div=1" target="_blank">
-                    <p>Netアンサーで手続きをする</p>
+                <a href="https://www.a-q-f.com/openpc/directLogin.do?yyy=7&login_div=1">
+                    <p class="procedure_button_text">Netアンサーで手続きをする</p>
                 </a>
             </div>
         </div>
 
+        <!--もっと詳しく見たい方②下部-->
         <div class="see_more_wrapper section_wrapper">
-            <div class="section_inner">
+            <div class="see_more_inner">
                 <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
-                    <img class="women_image" src="img/2601491 1.jpg" alt="案内する女性のイラスト">
+                    <img class="women_image pc_image" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
+                    <img class="women_image sp_image" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
                     <div class="see_more_content">
                         <p class="see_more_text">「あとから分割」をもっと詳しく見たい方はこちら<br>
                             <span class="see_more_text_supplement">（公式サイトへ遷移します）</span>
                         </p>
                     </div>
-                    <p class="arrow_text">»</p>
                 </a>
             </div>
         </div>
 
+        <!--注意事項-->
         <section class="cautionary_wrapper">
             <div class="cautionary_inner ">
                 <div class="cautionary_container">
@@ -175,6 +190,7 @@
 
     </main>
 
+    <!--ヘッダー-->
     <footer>
         footer
     </footer>
