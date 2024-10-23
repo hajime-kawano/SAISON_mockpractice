@@ -45,12 +45,8 @@ img {
     vertical-align: middle;
 }
 
-.sp_image {
+.sp_display {
     display: none;
-}
-
-.smartbanner img {
-    width: 10%;;
 }
 
 /* ヘッダー */
@@ -295,7 +291,10 @@ h3 {
 .application_content_text {
     font-size: 30px;
     font-weight: 700;
-    overflow-wrap: break-word;
+}
+
+.bottom_text {
+    vertical-align: bottom;
 }
 
 .border_top {
@@ -363,11 +362,11 @@ footer {
         margin-top: 48px;
     }
 
-    .pc_image {
+    .pc_display {
         display: none;
     }
 
-    .sp_image {
+    .sp_display {
         display: block;
     }
 
@@ -455,6 +454,15 @@ footer {
         padding-top: 32px;
     }
 
+    .application_content_logo {
+        width: 70%;
+        padding-right: 0;
+    }    
+
+    .bottom_text_br {
+        margin-top: 16px;
+        display: inline-block;
+    }    
 
     .cautionary_inner {
         padding: 16px;

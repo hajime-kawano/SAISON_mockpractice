@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Safari SmartBanner -->
+    <meta name="apple-itunes-app" content="app-id=896132217">
+
     <!-- Start SmartBanner configuration -->
     <meta name="smartbanner:title" content="セゾンPortal/クレジット管理">
     <meta name="smartbanner:author" content="Credit Saison Co.,ltd.">
@@ -19,8 +22,10 @@
     <meta name="smartbanner:icon-apple" content="img/saison_portal_icon.png">
     <meta name="smartbanner:icon-google" content="img/saison_portal_icon.png">
     <meta name="smartbanner:button" content="VIEW">
-    <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/jp/app/%E3%82%BB%E3%82%BE%E3%83%B3portal-%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E7%AE%A1%E7%90%86/id896132217">
-    <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=jp.co.saisoncard.android.saisonportal&pli=1">
+    <meta name="smartbanner:button-url-apple"
+        content="https://apps.apple.com/jp/app/%E3%82%BB%E3%82%BE%E3%83%B3portal-%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E7%AE%A1%E7%90%86/id896132217">
+    <meta name="smartbanner:button-url-google"
+        content="https://play.google.com/store/apps/details?id=jp.co.saisoncard.android.saisonportal&pli=1">
     <meta name="smartbanner:enabled-platforms" content="android,ios">
     <meta name="smartbanner:close-label" content="Close">
     <!-- End SmartBanner configuration -->
@@ -38,19 +43,13 @@
     </header>
 
     <main>
-        <!--スマートバナー-->
-        <section class="top">
-            <div class="smartbanner">
-            </div>
-        </section>
-
         <!--メインビジュアル-->
         <section class="main_visual">
             <h3>＼　新サービスのお知らせ　／<br>
                 <span class="yellow_line">「あとから分割」</span>がリリースいたしました
             </h3>
-            <img class="pc_image" src="img/mv_pc.jpg" alt="メインビジュアル">
-            <img class="sp_image" src="img/mv_sp.jpg" alt="メインビジュアル">
+            <img class="pc_display" src="img/mv_pc.jpg" alt="メインビジュアル">
+            <img class="sp_display" src="img/mv_sp.jpg" alt="メインビジュアル">
         </section>
 
         <!--Netアンサー①上部-->
@@ -73,10 +72,10 @@
                         <p class="content_title sp_25px">例えばこんな時に便利です</p>
                     </div>
                     <div class="example_cases">
-                        <img class="example_case pc_image" src="img/scene1.jpg">
-                        <img class="example_case sp_image" src="img/scene1_sp.jpg">
-                        <img class="example_case pc_image" src="img/scene2.jpg">
-                        <img class="example_case sp_image" src="img/scene2_sp.jpg">
+                        <img class="example_case pc_display" src="img/scene1.jpg">
+                        <img class="example_case sp_display" src="img/scene1_sp.jpg">
+                        <img class="example_case pc_display" src="img/scene2.jpg">
+                        <img class="example_case sp_display" src="img/scene2_sp.jpg">
                     </div>
                     <p class="cautionary_note">
                         *1　航空券4万円を分割3回にした場合、手数料が合計984円。<br>
@@ -98,8 +97,8 @@
         <div class="see_more_wrapper">
             <div class="see_more_inner">
                 <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
-                    <img class="women_image pc_image" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
-                    <img class="women_image sp_image" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
+                    <img class="women_image pc_display" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
+                    <img class="women_image sp_display" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
                     <div class="see_more_content">
                         <p class="see_more_text">「あとから分割」をもっと詳しく見たい方はこちら<br>
                             <span class="see_more_text_supplement">（公式サイトへ遷移します）</span>
@@ -109,23 +108,25 @@
             </div>
         </div>
 
-        <section class="application_wrapper section_wrapper">
-            <div class="section_inner">
-                <h2 class="sp_35px">お申し込み手順</h2>
-                <p class="content_title sp_25px">＼ アプリで便利に ／</p>
-                <div class="application_content">
-                    <img class="application_content_logo" src="img/ロゴ.png">
-                    <p class="application_content_text sp_18px">からもお手続きいただけます</p>
-                </div>
+        <section class="application_wrapper section_wrapper" <div class="section_inner">
+            <h2 class="sp_35px">お申し込み手順</h2>
+            <p class="content_title sp_25px">＼ アプリで便利に ／</p>
+            <div class="application_content">
+                <p class="application_content_text sp_18px">
+                    <img class="application_content_logo" src="img/logo.png">
+                    <span class="bottom_text">からも<br class="sp_display"><span
+                            class="bottom_text_br">お手続きいただけます</span></span>
+                </p>
+            </div>
 
-                <div class="application_step">
-                    <img class="pc_image" src="img/step_app.jpg">
-                    <img class="sp_image" src="img/step_app_sp.jpg">
-                    <div class="border_top"></div>
-                    <p class="content_title sp_25px">＼ WEBのお手続きはこちら ／</p>
-                    <img class="pc_image" src="img/step_net.jpg">
-                    <img class="sp_image" src="img/step_net_sp.jpg">
-                </div>
+            <div class="application_step">
+                <img class="pc_display" src="img/step_app.jpg">
+                <img class="sp_display" src="img/step_app_sp.jpg">
+                <div class="border_top"></div>
+                <p class="content_title sp_25px">＼ WEBのお手続きはこちら ／</p>
+                <img class="pc_display" src="img/step_net.jpg">
+                <img class="sp_display" src="img/step_net_sp.jpg">
+            </div>
             </div>
         </section>
 
@@ -142,8 +143,8 @@
         <div class="see_more_wrapper section_wrapper">
             <div class="see_more_inner">
                 <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
-                    <img class="women_image pc_image" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
-                    <img class="women_image sp_image" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
+                    <img class="women_image pc_display" src="img/2601491 1_pc.png" alt="案内する女性のイラスト">
+                    <img class="women_image sp_display" src="img/2601491 1_sp.png" alt="案内する女性のイラスト">
                     <div class="see_more_content">
                         <p class="see_more_text">「あとから分割」をもっと詳しく見たい方はこちら<br>
                             <span class="see_more_text_supplement">（公式サイトへ遷移します）</span>
@@ -163,23 +164,21 @@
                         <li> ※ご希望のご利用可能枠が50万円を超える場合、<br>
                             　所得証明書類(コピー)をご提出いただいております。</li>
                         <li> （別途、当社より、お電話・メール・SMSまたは書面でご連絡させていただきます。）</li>
-                        <li> ※お申し込みにあたり、運転免許証等の交付を受けている場合には
+                        <li> ※お申し込みにあたり、運転免許証等の交付を受けている場合には<br>
                             　運転免許証等の番号が必要です。</li>
-                        <li> ※お手続きには1週間～10日程のお日にちをいただいております。
+                        <li> ※お手続きには1週間～10日程のお日にちをいただいております。<br>
                             　変更後のご利用可能枠は書面でご案内いたします。</li>
                         <li>※Netアンサーは、システム上の都合により一部ご利用いただけない場合がございます。<br>
                             　詳しくはセゾンカードホームページのメンテナンス情報をご覧ください。</li>
-                        <li> ※当初所定の審査がございます。審査によりご希望の意に添えない場合もございますので、あらかじめご了承ください。<br>
-                            ※貸付条件をよくご確認のうえ、計画的にご利用ください。</li>
+                        <li> ※当初所定の審査がございます。審査によりご希望の意に添えない場合もございますので、あらかじめご了承ください。</li>
+                        <li>※貸付条件をよくご確認のうえ、計画的にご利用ください。</li>
                     </ul>
                     <ul class="link_ul">
-                        <li> ・カードキャッシングご利用に関するお知らせは
-                            <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
+                        <li> ・カードキャッシングご利用に関するお知らせは<a href="https://www.saisoncard.co.jp/creditcard/cashing/notice/">
                                 こちら
                             </a>
                         </li>
-                        <li> ・貸付条件表は
-                            <a href="https://www.saisoncard.co.jp/creditcard/payment/bunkatsu/">
+                        <li> ・貸付条件表は<a href="https://www.saisoncard.co.jp/services/sj042-kashitsuke.html">
                                 こちら
                             </a>
                         </li>
