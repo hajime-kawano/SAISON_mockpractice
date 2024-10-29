@@ -132,7 +132,7 @@ h3 {
 .procedure_button {
     font-size: 30px;
     width: 800px;
-    margin: 16px auto;
+    padding: 16px 0;
     height: 80px;
     background-color: #ff6700;
     border-radius: 38px;
@@ -203,7 +203,7 @@ h3 {
 }
 
 .see_more_inner {
-    border: #009785 solid 1px;
+    border: #009785 solid 2px;
     border-radius: 5px;
     position: relative;
     margin: 0 16px;
@@ -233,7 +233,7 @@ h3 {
     float: left;
     clear: both;
     position: absolute;
-    top: 16px;
+    top: 14px;
     left: 4%;
 }
 
@@ -386,6 +386,10 @@ footer {
         font-size: 25px;
     }
 
+    .sp_22px {
+        font-size: 22px;
+    }
+
     .sp_18px {
         font-size: 18px;
     }
@@ -406,6 +410,7 @@ footer {
 
     .supplement {
         margin-top: 30px;
+        line-height: 28px;
     }
 
     .cautionary_note {
@@ -425,7 +430,7 @@ footer {
 
     .procedure_button {
         font-size: 22px;
-        width: 90%;
+        width: 360px;
         height: 60px;
         border-radius: 38px;
     }
@@ -442,6 +447,7 @@ footer {
 
     .see_more_wrapper {
         height: 90px;
+        margin-top: 16px
     }
 
     .women_image {
@@ -464,6 +470,10 @@ footer {
         display: inline-block;
     }    
 
+    .cautionary_wrapper {
+        margin-top: 48px;
+    }
+    
     .cautionary_inner {
         padding: 16px;
     }
